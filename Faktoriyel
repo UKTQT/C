@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+main(){
+	int a,b;
+	int fakt= 1;
+	
+	printf("Faktoriyelin değerini giriniz = ");
+	scanf("%d",&a);
+	
+	while(a>=1){
+		fakt = fakt * a;
+		a--;
+	}
+	
+	printf("Sonuç = %d", fakt);
+	
+}
