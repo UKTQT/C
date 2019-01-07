@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+main(){
+	
+	int a;
+	printf("A degerini giriniz = "); scanf("%d", &a);
+	
+	switch(a){
+		case 1: printf("1");	break;
+		case 2: printf("İki"); 	break;
+		case 3: printf("Üç");	break;
+		case 4: printf("Dört"); break;
+		case 5: printf("Bes");	break;
+		
+		default:printf("Yanlış değer girdiniz");
+	}
+}
