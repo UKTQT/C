@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+main(){
+	
+	float sayi, kontrol;
+	printf("Sayiyi Giriniz = ", sayi);
+	scanf ("%d", sayi);
+	if(sayi/1==0) {
+		printf("Girdiğiniz sayı tam sayıdır");
+	}
+	if(sayi/2==1){
+		printf("Girdiğiniz sayı tam sayıdır");
+	}
+
+	else{
+		printf("Girdiğiniz sayı tam sayı değildir.");
+	}
+	
+	
+}
