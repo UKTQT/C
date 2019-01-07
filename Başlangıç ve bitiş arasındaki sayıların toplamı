@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+
+main(){
+	
+	int baslangic,b, a,ortalama, bitis, toplam;
+	
+	printf("Baslangic Sayisini Giriniz = ");
+	scanf("%d", &baslangic);
+	
+	printf("Bitis Sayisini Giriniz  = ");
+	scanf ("%d", &bitis);
+	
+	a = bitis + baslangic;
+	toplam = 0;
+	
+	for(b = baslangic; b <= bitis; b++){
+		toplam = toplam+b;
+	}
+	
+	ortalama = toplam / a;
+	
+	printf("Toplamlari = %d",toplam);
+	printf("   Ortalamaları = %d", ortalama);
+	
+
+	
+}
