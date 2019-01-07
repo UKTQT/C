@@ -1,0 +1,60 @@
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+main(){
+	int aboneturu ;
+	float ucret, harcama;
+	
+	
+	
+	printf("Abone Turunu Giriniz (1-2-3)  =  ");
+	scanf("%d",&aboneturu);
+	
+	if (aboneturu <= 0){
+		printf("Girdiğiniz değer yanlış \n");
+		printf("Abone Turunu Giriniz (1-2-3)  =  ");
+		scanf("%d",&aboneturu);
+	}
+	
+	if (aboneturu >= 4){
+		printf("Girdiğiniz değer yanlış \n");
+		printf("Abone Turunu Giriniz (1-2-3)  =  ");
+		scanf("%d",&aboneturu);
+	}
+	
+	if (aboneturu == 1 || aboneturu == 2 || aboneturu == 3){
+		printf("Harcama miktarini giriniz =  ");
+		scanf("%f", &harcama);
+	
+	
+		if(aboneturu == 1){
+			if(harcama <= 50){
+				ucret = harcama/100*18;
+				printf ("Ucret bu kadar = %.2f",ucret);
+				// printf("Sonuc  = %.2f", vizeort);
+			}else {
+				ucret = (harcama*1.5)/100*18;
+				printf("Ucret bu kadar = %.2f",ucret);
+			}
+		
+		}else if (aboneturu == 2){
+			if(harcama<=150){
+				ucret = (harcama*1.5)/100*18;
+				printf("Ucret bu kadar = %.2f",ucret);
+			}else {
+				ucret = (harcama*2)/100*18;
+				printf("Ucret bu kadar = %.2f",ucret);
+			}
+		}else if (aboneturu == 3){
+			if (harcama <= 100){
+				ucret = (harcama*0.75)/100*18;
+				printf("Ucret bu kadar = %.2f",ucret);
+			}else {
+				ucret = harcama/100*18;
+				printf("Ucret bu kadar = %.2f",ucret);
+			}
+		}
+	}
+}
